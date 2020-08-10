@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
-class App extends StatelessWidget {
+class App extends StatefulWidget {
+  @override
+  _AppState createState() => _AppState();
+}
+
+class _AppState extends State<App> {
+  int counter = 0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -8,10 +14,12 @@ class App extends StatelessWidget {
         appBar: AppBar(
           title: Text('Hello0dssadwaa'),
         ),
-        body: Center(child: Text('Tesssstqaaaaasa12sa3cosssmplete')),
+        body: Center(child: Text('# of images: $counter')),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            print('Hello World');
+            setState(() {
+              counter++;
+            });
           },
           child: Icon(Icons.add),
         ),
