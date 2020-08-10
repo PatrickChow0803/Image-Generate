@@ -2,7 +2,15 @@ import 'package:flutter/material.dart';
 
 void main() {
   var app = MaterialApp(
-    home: Text('Hello World'),
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text('Hello0dssadwaa'),
+      ),
+      body: Center(child: Text('Tesssstqaaaaasa12sa3')),
+      floatingActionButton: FloatingActionButton(
+        onPressed: null,
+      ),
+    ),
   );
 
   runApp(app);
