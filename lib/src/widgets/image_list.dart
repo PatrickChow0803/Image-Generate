@@ -9,7 +9,7 @@ class ImageList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemBuilder: (ctx, int index) {
-        return Text(images[index].url);
+        return Image.network(images[index].url);
       },
       itemCount: images.length,
     );
