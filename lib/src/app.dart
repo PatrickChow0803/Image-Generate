@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' show get;
 import 'models/image+model.dart';
+import 'widgets/image_list.dart';
 
 class App extends StatefulWidget {
   @override
@@ -30,7 +31,7 @@ class _AppState extends State<App> {
         appBar: AppBar(
           title: Text('Hello0dssadwaa'),
         ),
-        body: Center(child: Text('# of images: $counter')),
+        body: ImageList(images: images),
         floatingActionButton: FloatingActionButton(
           // This gives onPressed a handel to the method fetchImage.
           // DO NOT type in fetchImage(), otherwise it will cause the method to be run on startup.
