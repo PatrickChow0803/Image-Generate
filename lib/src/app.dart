@@ -29,7 +29,7 @@ class _AppState extends State<App> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Hello0dssadwaa'),
+          title: Text('Image Generate'),
         ),
         body: ImageList(images: images),
         floatingActionButton: FloatingActionButton(
